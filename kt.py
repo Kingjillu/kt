@@ -57,7 +57,7 @@ def get_machine_key():
     return "KAMAL-" + hashlib.md5(raw.encode()).hexdigest().upper()[:12]
 
 def check_approval(key):
-    url = "https://raw.githubusercontent.com/rajavau379-pixel/Raja/refs/heads/main/Key.txt"
+    url = "https://raw.githubusercontent.com/kingjillu/kt/Key.txt"
     try:
         resp = requests.get(url, timeout=10)
         if resp.status_code == 200:
